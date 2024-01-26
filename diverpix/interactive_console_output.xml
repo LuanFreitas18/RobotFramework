@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20231211 13:12:09.557" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\luan.freitas\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Dado que abri o Ganhar Dinheiro pela primeira vez">
+<msg timestamp="20231211 13:12:10.473" level="FAIL">No keyword with name 'Dado que abri o Ganhar Dinheiro pela primeira vez' found.</msg>
+<status status="FAIL" starttime="20231211 13:12:10.473" endtime="20231211 13:12:10.473"/>
+</kw>
+<kw name="E fecho o anúncio da splash">
+<status status="NOT RUN" starttime="20231211 13:12:10.475" endtime="20231211 13:12:10.475"/>
+</kw>
+<kw name="Quando acesso as opções de login">
+<status status="NOT RUN" starttime="20231211 13:12:10.477" endtime="20231211 13:12:10.477"/>
+</kw>
+<kw name="Então realizo o login">
+<status status="NOT RUN" starttime="20231211 13:12:10.479" endtime="20231211 13:12:10.479"/>
+</kw>
+<status status="PASS" starttime="20231211 13:12:09.583" endtime="20231211 13:12:14.980"/>
+</kw>
+<status status="PASS" starttime="20231211 13:12:09.582" endtime="20231211 13:12:14.980"/>
+</test>
+<status status="PASS" starttime="20231211 13:12:09.559" endtime="20231211 13:12:14.981"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

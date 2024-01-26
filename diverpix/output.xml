@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20240112 15:54:39.285" rpa="false" schemaversion="4">
+<suite id="s1" name="Testes Diverpix" source="c:\Users\luan.freitas\Documents\Automacoes\diverpix\tests\testes_diverpix.robot">
+<test id="s1-t1" name="CTD01 - Login" line="9">
+<kw name="Abrir o Diverpix pela primeira vez" library="resource_diverpix" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>-- Abrindo o Diverpix pela primeira vez --</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240112 15:54:39.581" endtime="20240112 15:54:39.582"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>app=${APK_PATH_HML}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20240112 15:54:39.582" endtime="20240112 15:54:54.253"/>
+</kw>
+<status status="PASS" starttime="20240112 15:54:39.580" endtime="20240112 15:54:54.254"/>
+</kw>
+<kw name="Dado que fechei o anúncio da splash" library="resource_diverpix">
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${ICON_CLOSE_ADS2}</arg>
+<arg>timeout=40s</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20240112 15:55:32.963" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]
+xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]</msg>
+<status status="PASS" starttime="20240112 15:54:54.256" endtime="20240112 15:55:32.966"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${ICON_CLOSE_ADS2}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240112 15:55:32.969" level="INFO">Clicking element 'xpath=//android.widget.ImageView[@content-desc="Ad closed"]'.</msg>
+<msg timestamp="20240112 15:55:33.196" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc="Ad closed"]</msg>
+<status status="PASS" starttime="20240112 15:55:32.966" endtime="20240112 15:55:33.198"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240112 15:55:38.199" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240112 15:55:33.198" endtime="20240112 15:55:38.199"/>
+</kw>
+<status status="PASS" starttime="20240112 15:54:54.255" endtime="20240112 15:55:38.199"/>
+</kw>
+<kw name="Quando acesso as opções de login" library="resource_diverpix">
+<kw name="Go Back" library="AppiumLibrary">
+<doc>Goes one step backward in the browser history.</doc>
+<status status="PASS" starttime="20240112 15:55:38.200" endtime="20240112 15:55:39.274"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${OPCAO_PERFIL}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20240112 15:55:39.274" endtime="20240112 15:55:39.837"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${OPCAO_PERFIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240112 15:55:39.842" level="INFO">Clicking element 'accessibility_id=Perfil'.</msg>
+<status status="PASS" starttime="20240112 15:55:39.838" endtime="20240112 15:55:41.266"/>
+</kw>
+<status status="PASS" starttime="20240112 15:55:38.200" endtime="20240112 15:55:41.267"/>
+</kw>
+<kw name="Então realizo o login" library="resource_diverpix">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240112 15:55:41.416" level="INFO">xpath criteria: //*[@resource-id = 'login']</msg>
+<status status="PASS" starttime="20240112 15:55:41.268" endtime="20240112 15:55:41.416"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${BTN_LOGIN}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240112 15:55:41.419" level="INFO">Clicking element '//*[@resource-id = 'login']'.</msg>
+<msg timestamp="20240112 15:55:42.225" level="INFO">xpath criteria: //*[@resource-id = 'login']</msg>
+<status status="PASS" starttime="20240112 15:55:41.416" endtime="20240112 15:55:42.225"/>
+</kw>
+<kw name="Page Should Contain Text" library="AppiumLibrary">
+<arg>Google</arg>
+<doc>Verifies that current page contains `text`.</doc>
+<msg timestamp="20240112 15:55:42.330" level="INFO">Current page contains text 'Google'.</msg>
+<status status="PASS" starttime="20240112 15:55:42.225" endtime="20240112 15:55:42.330"/>
+</kw>
+<kw name="Click Text" library="AppiumLibrary">
+<arg>Google</arg>
+<doc>Click text identified by ``text``.</doc>
+<msg timestamp="20240112 15:55:45.085" level="INFO">xpath criteria: //*[contains(@text,"Google")]</msg>
+<status status="PASS" starttime="20240112 15:55:42.330" endtime="20240112 15:55:45.086"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${EMAIL}</arg>
+<arg>timeout=7s</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20240112 15:55:46.957" level="INFO">criteria is com.google.android.gms:id/account_display_name
+criteria is com.google.android.gms:id/account_display_name
+criteria is com.google.android.gms:id/account_display_name</msg>
+<status status="PASS" starttime="20240112 15:55:45.086" endtime="20240112 15:55:46.957"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${EMAIL}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240112 15:55:46.962" level="INFO">Clicking element 'com.google.android.gms:id/account_display_name'.</msg>
+<msg timestamp="20240112 15:55:47.081" level="INFO">criteria is com.google.android.gms:id/account_display_name</msg>
+<status status="PASS" starttime="20240112 15:55:46.958" endtime="20240112 15:55:47.082"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240112 15:55:50.084" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240112 15:55:47.083" endtime="20240112 15:55:50.085"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>${BTN_ENTENDI}</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<msg timestamp="20240112 15:55:50.779" level="INFO">xpath criteria: //*[contains(@text,"Entendi")]</msg>
+<status status="PASS" starttime="20240112 15:55:50.085" endtime="20240112 15:55:50.779"/>
+</kw>
+<status status="PASS" starttime="20240112 15:55:41.268" endtime="20240112 15:55:50.780"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary" type="TEARDOWN">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20240112 15:55:50.781" endtime="20240112 15:55:51.904"/>
+</kw>
+<status status="PASS" starttime="20240112 15:54:39.579" endtime="20240112 15:55:51.905"/>
+</test>
+<doc>Testes no Diverpix</doc>
+<status status="PASS" starttime="20240112 15:54:39.293" endtime="20240112 15:55:51.908"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testes Diverpix">Testes Diverpix</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240112 15:54:39.573" level="ERROR">Error in file 'c:\Users\luan.freitas\Documents\Automacoes\diverpix\utils.robot' on line 7: Setting variable 'c:\\Users\\luan.freitas\\Documents\\Automacoes\\diverpix' failed: Invalid variable name 'c:\\Users\\luan.freitas\\Documents\\Automacoes\\diverpix'.</msg>
+</errors>
+</robot>
